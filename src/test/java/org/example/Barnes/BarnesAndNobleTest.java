@@ -53,6 +53,7 @@ class BarnesAndNobleTest {
         assertEquals(100, ps.getTotalPrice());
         assertEquals(Map.of(expectedBook, 2), ps.getUnavailable());
         verify(process, times(1)).buyBook(expectedBook, 10);
+
     }
 
     @Test
