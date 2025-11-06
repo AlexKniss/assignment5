@@ -41,7 +41,7 @@ class AmazonUnitTest {
         List<Item> items = Arrays.asList(item);
 
         when(cart.getItems()).thenReturn(items);
-        when(rule.priceToAggregate(items)).thenReturn(15.99);
+        when(rule.priceToAggregate(items)).thenReturn(9.99);
 
 
         Amazon amazon = new Amazon(cart, Arrays.asList(rule));
